@@ -2,11 +2,25 @@
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=2.0,minimum-scale=1.7">
+    <meta name="viewport" content="width=device-width,initial-scale=0.7,minimum-scale=1.2,maximum-scale=1.2,">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="shortcut icon" href="material/favicon.png">
-	<title>かえるとつくし</title>
-	<link rel="stylesheet" type="text/css" href="main.css" media="all">    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <title>かえるとつくし</title>
+	<link rel="stylesheet" type="text/css" href="main.css" media="all">   
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+    </script>
+    
+<!-------------カラーボックス----------->
+
+    <link href="example1/colorbox.css" rel="stylesheet" />
+    <script src="jquery.colorbox-min.js"></script>
+    <script src="jquery.colorbox-ja.js"></script>
+
+    <script src="jquery.colorbox-min.js"></script>
+    <script src="jquery.colorbox-ja.js"></script>
+
+   
         <script>
         $(function() {
           var h = $(window).height();
@@ -31,17 +45,84 @@
           $('#loader-bg').delay(900).fadeOut(800);
           $('#loader').delay(600).fadeOut(300);
         }
+            
+            //つくしの画像を変える関数
+        function toggle_func(moko,tukusi){
+            $("#se1")[0].play();//音を再生
+            /*cssのtoggle_tukusiをつけたり消したりする*/
+            $(moko).toggleClass('toggle_tukusi');
+            $(tukusi).toggleClass('toggle_tukusi');
+            //つくしを10秒後に消す
+            if($(tukusi).hasClass('toggle_tukusi') == false){//つくしがtoggle_tukusiを持ってなかったら
+                setTimeout(function(){
+                    $(moko).removeClass('toggle_tukusi');//土の方を表示
+                    $(tukusi).addClass('toggle_tukusi');// つくしを非表示
+                },10000);
+            }
+        }
+        
+    /*飛ばないようにするやつ
+     $(function(){
+        var anchor = $('a'); 
+        anchor.each(function(){
+            var url = $(this).attr('href');
+            $(this).removeAttr('href');
+            $(this).click(function(){
+                location.href = url;
+            });
+        });
+});
+ */
+    //カラーボックス
+    
+    $(document).ready(function(){
+        /*
+        $("a").click(function(event){
+        event.preventDefault();
+      });*/
+      $(".iframe").colorbox({iframe:true, width:"70%px", height:"80%"});
+   });
+            
+            
+            //カブトムシ
+            /*
+            function fall_anime(my_id){
+                if(!$("#kabuto").length){
+                    $(my_id).after(" <img src='gif/kabuto.gif' id='kabuto'>");
+                }else{
+                     $("#kabuto").click(function(){
+                        $(this).remove();
+                    });
+                }
+            }*/
+            function fall_anime(my_id){
+            $(my_id).toggleClass('toggle_tukusi');
+        }
+            
+           
+            function fall_anime(my_id){
+                $(my_id).after(" ");
+            }
+   
         </script>
 </head>
+
+    
 <body>
+    <script>
+  window.onload = function(){
+  window.scrollTo(0,0);
+}
+</script>
+    
     <div id="loader-bg">
-  <div id="loader">
-    <img src="gif/walk3.gif" width="80" height="80" alt="Now Loading..." />
-      <p><span id="green">よ</span>みこみ中…</p>
-  </div>
-</div>
-<div id="wrap">
-    <img src="material/background/back/back_resize.png"id="back_resize">
+      <div id="loader">
+        <img src="gif/rode.gif" width="80" height="80" alt="Now Loading..." />
+          <p>よみこみ中…</p>
+      </div>
+    </div>
+    <div id="wrap">
+        <img src="material/background/back/back_resize.png"id="back_resize">
 
     
 <!----------ここからつくし---------------------------------------------------->
@@ -56,15 +137,20 @@
     <img src="material/tsukushi/t3.png" id="t3">
     <img src="material/tsukushi/t4.png" id="t4">
     <img src="material/tsukushi/t5.png" id="t5">
-
     
+        <!-- つくし生えてくる -->
+    <img src="material/tsukushi/t2.png" id="t6" class="toggle_tukusi" onclick="toggle_func(moko,t6);">
+    <img src="material/tsukushi/t3.png" id="t7" class="toggle_tukusi" onclick="toggle_func(moko2,t7);">
+    <img src="material/tsukushi/t4.png" id="t8" class="toggle_tukusi" onclick="toggle_func(moko3,t8);">
+    <img src="material/background/tree/tsubaki6.png" id="t9" class="toggle_tukusi" onclick="toggle_func(moko4,t9);">
+
     
 <!----------ここからカエル---------------------------------------------------->
     <img src="gif/yodare.gif" id="yodare">
     <img src="gif/anguri.gif" id="anguri">
      <img src="gif/walk.gif" id="walk">
     <img src="gif/rage.gif" id="rage">
-    <a href="secret.html"><img src="gif/dig.gif" id="dig"></a>
+    <a class="iframe" href="secret.html"><img src="gif/dig.gif" id="dig"></a>
     <img src="gif/pon.gif" id="pon">
     <img src="gif/banzai.gif" id="banzai">
     <img src="gif/banzai2.gif" id="banzai2">
@@ -79,6 +165,17 @@
     <img src="gif/give.gif" id="give">
     <img src="gif/run2.gif" id="run">
     <img src="gif/poyo.gif" id="poyo">
+    <img src="gif/swim.gif" id="swim">
+    <img src="gif/take.gif" id="take">
+    <img src="gif/sit.gif" id="sit">
+    <img src="gif/dance.gif" id="dance">
+    <img src="gif/tum.gif" id="tum">
+    <img src="gif/gora.gif" id="gora">
+    <img src="gif/battle.gif" id="battle">
+    <img src="gif/kumo.gif" id="kumo">
+    <img src="gif/drink.gif" id="drink">
+    <img src="gif/eat2.gif" id="eat2">
+    <img src="gif/maze2.gif" id="maze2">
  
     
 
@@ -90,8 +187,11 @@
     <img src="material/background/tree/tree1.png" id="tree1">
    <img src="material/background/back/rode.png" id="rode">
    <img src="material/background/back/saku2.png" id="saku">
-    <img src="material/background/reaf/moko.png" id="moko">
-    <img src="material/background/reaf/moko.png" id="moko2"><img src="material/background/reaf/moko.png" id="moko3"><img src="material/background/reaf/moko.png" id="moko4">
+  <img src="gif/moko.gif" id="moko" onclick="toggle_func(moko,t6);">
+    <img src="material/background/reaf/moko.png" id="moko2" onclick="toggle_func(moko2,t7);">
+    <img src="material/background/reaf/moko.png" id="moko3" onclick="toggle_func(moko3,t8);">
+    <img src="material/background/reaf/moko.png" id="moko4" onclick="toggle_func(moko4,t9);">
+    
     <img src="material/background/reaf/kanban.png" id="kanban">
     <img src="material/background/yama/yama1.png" id="yama1">
    <img src="material/background/reaf/ha.png" id="ha">
@@ -100,7 +200,7 @@
     <img src="material/background/tree/tsubaki2.png" id="tubaki2">
     <img src="material/background/tree/tree2.png"  id="tree2">
     <img src="material/background/tree/tree3.png" id="tree3">
-    <img src="material/background/reaf/ike2.png" id="ike">
+    <img src="gif/ike.gif" id="ike">
     <img src="material/background/reaf/tuchi.png" id="tuchi">
     <img src="material/background/reaf/kanban2.png" id="kanban2">
     <img src="gif/kawa.gif" id="kawa">
@@ -115,6 +215,42 @@
     <img src="material/background/reaf/baketu.png" id="baketu">
     <img src="material/background/reaf/baketu2.png" id="baketu2">
     <img src="gif/sun.gif" id="sun">
+    <a a class="iframe" href="http://im2007.heteml.net/wc/nge/semiten/secret2.html"><img src="material/background/back/ana2.png" id="ana2"></a>
+    <img src="gif/oka.gif" id="oka">
+    <img src="material/background/reaf/zyu.png" id="zyu">
+    <img src="material/background/reaf/rock.png" id="rock">
+    <img src="material/background/reaf/rock2.png" id="rock2">
+    <img src="gif/kumo6.gif" id="kumo6">
+    <img src="material/background/reaf/pachi1.png" id="pachi1">
+    <img src="material/background/reaf/has.png" id="has">
+    <img src="gif/hamon.gif" id="hamon">
+    <img src="material/background/back/siru.png" id="shiru"> <img src="material/background/back/siru.png" id="shiru2">
+    
+     <img src="gif/tree.gif" id="tsubaki6" onclick="fall_anime(kabuto)">
+    <img src="gif/kabuto.gif" id="kabuto" class="toggle_tukusi">
+    
+
+
+        
+    <img src="material/background/tree/tree4.png" id="tree4">
+      <img src="material/background/tree/tree6.png" id="tree6">
+    <img src="gif/eat.gif" id="eat">
+    <img src="gif/kumo8.gif" id="kumo8">
+    <img src="gif/swim2.gif" id="swim2">
+    <img src="material/background/back/kinomi.png" id="kinomi">
+    <img src="gif/on.gif" id="on">
+    <img src="gif/ha2.gif" id="ha2">
+    <img src="material/background/reaf/pachi3.png" id="pachi3">
+       <img src="gif/hand.gif" id="hand">
+   
+     
+    
+    
+                                                       
+    
     </div>
+    
+     <!-- 音のファイル -->
+    <audio src="kouka.mp3" id="se1"></audio>
 </body>
 </html>
