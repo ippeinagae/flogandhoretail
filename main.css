@@ -1,0 +1,567 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background-image: url(material/background/back/back_color.png)
+}
+
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #111111;
+  z-index: 4;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 400px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 4;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+span#green{
+    color: #008800	;
+}
+
+img#back_resize{
+    position: absolute;
+    height: 1500px;
+    z-index: 3;
+}
+
+
+/*---------------------------------------------------ここからカエル----------------------------------------------------*/
+img#yodare{
+    position: absolute;
+    height: 80px;
+    top:330px;
+    left:353px;
+}
+img#anguri{
+    position: absolute;
+    height: 100px;
+    top:340px;
+    left:260px;
+}
+img#walk{position: absolute;
+    height: 100px;
+    top:620px;
+    left:410px;
+    z-index: 1;}
+img#sleep{position: absolute;
+    height: 60px;
+    top:466px;
+    left:770px;
+    transform:rotate(15deg) ;
+    z-index: 1;}
+img#dig{position: absolute;
+    height: 105px;
+    top:897px;
+    left:640px;
+    z-index: 5}
+img#rage{position: absolute;
+    height: 120px;
+    top:880px;
+    left:330px;
+    z-index: 1}
+img#pon{position: absolute;
+    height: 100px;
+    top:980px;
+    left:480px;
+    z-index: 1}
+img#banzai{position: absolute;
+    height: 150px;
+    top:950px;
+    left:320px;
+    z-index: 1}
+img#banzai2{position: absolute;
+    height: 140px;
+    top:950px;
+    left:610px;
+    z-index: 1;
+    transform: scale(-1, 1);}
+img#kerobin{position: absolute;
+    height: 100px;
+    top:1180px;
+    left:1110px;
+    z-index: 1;
+    transform: scale(-1, 1);}
+img#nuku{position: absolute;
+    height: 100px;
+    top:1130px;
+    left:1150px;
+    z-index: 1;
+    transform: scale(-1, 1);}
+img#hipparo{
+    position: absolute;
+    height: 120px;
+    top:1135px;
+    left:1270px;
+    z-index: 1;
+}
+img#dig2{
+    position: absolute;
+    height: 150px;
+    top:1225px;
+    left:1490px;
+    z-index: 2;
+}
+img#poyo{
+    position: absolute;
+    height: 120px;
+    top:1280px;
+    left:930px;
+    z-index: 2;
+}
+img#kona{
+    position: absolute;
+    height: 125px;
+    top:825px;
+    left:527px;
+    z-index: 1;
+}
+img#otama{
+    position: absolute;
+    height: 90px;
+    top:795px;
+    left:837px;
+    z-index: 1;
+    }
+img#run{
+    position: absolute;
+    height: 90px;
+    top:705px;
+    left:1117px;
+    z-index: 1;
+    }
+img#maze{
+    position: absolute;
+    height: 60px;
+    top:526px;
+    left:1201px;
+    z-index: 1;
+    }
+img#nabe{
+    position: absolute;
+    height: 130px;
+    top:485px;
+    left:1121px;
+    z-index: 1;
+    }
+img#sit{
+    position: absolute;
+    height: 50px;
+    top:495px;
+    left:1503px;
+    z-index: 2;
+    }
+img#give{
+    position: absolute;
+    height: 60px;
+    top:610px;
+    left:1263px;
+    z-index: 2;
+    }
+img#take{
+    position: absolute;
+    height: 80px;
+    top:590px;
+    left:1653px;
+    z-index: 2;
+    }
+img#tum{
+    position: absolute;
+    height: 90px;
+    top:639px;
+    left:743px;
+    z-index: 2;
+    }
+
+
+/*---------------------------------------------------ここからつくし----------------------------------------------------*/
+img#t1{
+    position: absolute;
+    height: 350px;
+    top:147px;
+    left:165px;
+}
+img#housi{
+    position: absolute;
+    height: 100px;
+    top:365px;
+    left:420px;
+}
+img#housi2{
+    position: absolute;
+    height: 100px;
+    top:380px;
+    left:220px;
+}
+img#housi3{
+    position: absolute;
+    height: 100px;
+    top:390px;
+    left:310px;
+}
+img#h4{position: absolute;
+    height: 85px;
+    top:860px;
+    left:470px;
+    z-index: 1;}
+img#t2{
+    position: absolute;
+    height: 85px;
+    top:1205px;
+    left:1190px;
+    z-index: 1;
+}
+img#t3{
+    position: absolute;
+    height: 120px;
+    top:1200px;
+    left:1260px;
+    z-index: 2;
+}
+img#t4{
+    position: absolute;
+    height: 90px;
+    top:1120px;
+    left:1320px;
+    z-index: 1;
+}
+img#t5{
+    position: absolute;
+    height: 80px;
+    top:1220px;
+    left:1380px;
+    z-index: 2;
+}
+img#ty1{
+    position: absolute;
+    height: 90px;
+    top:815px;
+    left:1110px;
+    z-index: 1;
+}
+img#ty2{
+    position: absolute;
+    height: 70px;
+    top:915px;
+    left:1120px;
+    z-index: 1;
+}
+
+/*---------------------------------------------------背景----------------------------------------------------*/
+img#kumo1{
+    position: absolute;
+    height: 180px;
+    top:200px;
+    left:60px;
+}
+
+img#kumo2{
+    position: absolute;
+    height: 130px;
+    top:250px;
+    left:390px;
+}
+img#tree1{
+    position: absolute;
+    height: 150px;
+    top:325px;
+    left:110px;
+}
+img#tree4{
+    position: absolute;
+    height: 120px;
+    top:590px;
+    left:650px;
+}
+img#tree2{
+    position: absolute;
+    height: 150px;
+    top:480px;
+    left:400px;
+}
+img#tree3{
+    position: absolute;
+    height: 190px;
+    top:599px;
+    left:100px;}
+img#tree6{
+    position: absolute;
+    height: 180px;
+    top:639px;
+    left:300px;}
+img#rode{
+    position: absolute;
+    height: 350px;
+    top:460px;
+    left:189px;
+    z-index: -1;
+    }
+img#ha{
+     position: absolute;
+    height: 60px;
+    top:469px;
+    left:770px;
+    transform:rotate(10deg); 
+}
+img#kanban{
+     position: absolute;
+    height: 130px;
+    top:610px;
+    left:540px;
+}
+img#kanban2{
+     position: absolute;
+    height: 210px;
+    top:881px;
+    left:1119px;
+}
+img#saku{
+     position: absolute;
+    height: 500px;
+    top:720px;
+    left:120px;
+}
+
+img#ike{
+      position: absolute;
+    height: 550px;
+    top:940px;
+    left:980px;
+}
+img#moko{
+    position: absolute;
+    height: 50px;
+    z-index: 1;
+    top:1050px;
+    left: 270px;
+}
+img#moko2{
+    position: absolute;
+    height: 50px;
+    z-index: 1;
+    top:1045px;
+    left: 400px;
+}
+img#moko3{
+    position: absolute;
+    height: 35px;
+    z-index: 1;
+    top:1052px;
+    left: 580px;
+}
+img#moko4{
+    position: absolute;
+    height: 40px;
+    z-index: 1;
+    top:1050px;
+    left: 680px;
+}
+img#rode2{
+    position: absolute;
+    height: 550px;
+    top:490px;
+    left: 670px;
+    z-index: -1;
+}
+img#wood{
+    position: absolute;
+    height: 250px;
+    top:466px;
+    left: 992px;
+}
+
+img#tesuto{  position: absolute;
+    height: 550px;
+    top:100px;
+    left: 1500px;}
+img#kumo4{
+    position: absolute;
+    height: 110px;
+    top:220px;
+    left: 600px;
+}
+img#tree5{
+    position: absolute;
+    height: 130px;
+    top:486px;
+    left: 570px;
+}
+img#ana{
+    position: absolute;
+    height: 35px;
+    top:574px;
+    left: 580px;
+}
+img#rock{ position: absolute;
+    height: 39px;
+    top:520px;
+    left:1491px;
+    z-index: 1;}
+
+img#rock2{ position: absolute;
+    height: 50px;
+    top:575px;
+    left:1451px;
+    z-index: 1;}
+img#baketu{
+    position: absolute;
+    height: 30px;
+    top:660px;
+    left:1243px;
+    z-index: 2;
+    }
+img#baketu2{
+    position: absolute;
+    height: 30px;
+    top:640px;
+    left:1303px;
+    z-index: 2;
+    }
+img#siru{
+     position: absolute;
+    height: 5px;
+    top:570px;
+    left:1523px;
+    z-index: 2;
+}
+img#siru2{
+     position: absolute;
+    height: 4px;
+    top:575px;
+    left:1503px;
+    z-index: 2;
+}
+img#tsubaki{position: absolute;
+    height: 60px;
+    top:595px;
+    left:1461px;
+    z-index: 1;}
+img#tsubaki2{position: absolute;
+    height: 70px;
+    top:675px;
+    left:1441px;
+    z-index: 1;}
+img#tsubaki3{position: absolute;
+    height: 80px;
+    top:805px;
+    left:1481px;
+    z-index: 1;}
+
+img#rode3{position: absolute;
+    height: 80px;
+    top:488px;
+    left:1321px;
+    z-index: 1;
+    
+}
+img#kumo5{
+    position: absolute;
+    height: 80px;
+    top:320px;
+    left: 1500px;
+    
+}
+img#yama1{
+     position: absolute;
+    height: 260px;
+    top:372px;
+    left: 440px;
+    z-index: -1;
+    
+}
+img#rode4{ position: absolute;
+    height: 330px;
+    top:629px;
+    left: 560px;
+    z-index: -1;
+    }
+img#tubaki{ position: absolute;
+    height: 60px;
+    top:729px;
+    left: 320px;
+    z-index: -1;
+    }
+img#tubaki2{ position: absolute;
+    height: 50px;
+    top:529px;
+    left: 190px;
+    z-index: -1;
+    }
+img#tuchi{ position: absolute;
+    height: 14px;
+    top:947px;
+    left: 360px;
+    z-index: 1;
+    }
+img#kawa{ position: absolute;
+    height: 150px;
+    top:1349px;
+    left: 670px;
+    z-index: 1;
+    }
+img#dodai{ position: absolute;
+    height: 660px;
+    top:820px;
+    left: -50px;
+    z-index: 1;
+    }
+img#tsubaki4{ position: absolute;
+    height: 70px;
+    top:1380px;
+    left: 300px;
+    z-index: 1;
+    }
+img#ten{ position: absolute;
+    height: 120px;
+    top:1120px;
+    left: 930px;
+    z-index: 1;
+    }
+img#rode5{ position: absolute;
+    height: 130px;
+    top:865px;
+    left: 1042px;
+    z-index: -1;
+    }
+img#ten1{ position: absolute;
+    height: 130px;
+    top:965px;
+    left: 912px;
+    z-index: -1;
+    }
+img#yama2{ position: absolute;
+    height: 340px;
+    top:579px;
+    left: 736px;
+    z-index: -1;
+    }
+img#sun{ position: absolute;
+    height: 240px;
+    top:179px;
+    left: 1206px;
+    z-index: -1;
+    }
+img#sen1{ position: absolute;
+    height: 160px;
+    top:700px;
+    left: 736px;
+    z-index: -1;
+    }

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=2.0,minimum-scale=1.7">
+    <link rel="shortcut icon" href="material/favicon.png">
+	<title>かえるとつくし</title>
+	<link rel="stylesheet" type="text/css" href="main.css" media="all">    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+        $(function() {
+          var h = $(window).height();
+
+          $('#wrap').css('display','none');
+          $('#loader-bg ,#loader').height(h).css('display','block');
+        });
+
+        $(window).load(function () { //全ての読み込みが完了したら実行
+          $('#loader-bg').delay(900).fadeOut(800);
+          $('#loader').delay(600).fadeOut(300);
+          $('#wrap').css('display', 'block');
+        });
+
+        //10秒たったら強制的にロード画面を非表示
+        $(function(){
+          setTimeout('stopload()',10000);
+        });
+
+        function stopload(){
+          $('#wrap').css('display','block');
+          $('#loader-bg').delay(900).fadeOut(800);
+          $('#loader').delay(600).fadeOut(300);
+        }
+        </script>
+</head>
+<body>
+    <div id="loader-bg">
+  <div id="loader">
+    <img src="gif/walk3.gif" width="80" height="80" alt="Now Loading..." />
+      <p><span id="green">よ</span>みこみ中…</p>
+  </div>
+</div>
+<div id="wrap">
+    <img src="material/background/back/back_resize.png"id="back_resize">
+
+    
+<!----------ここからつくし---------------------------------------------------->
+    <img src="gif/t1.gif" id="t1">
+    <img src="material/tsukushi/housi.png" id="housi">
+    <img src="material/tsukushi/housi2.png" id="housi2">
+     <img src="material/tsukushi/houshi3.png" id="housi3">
+    <img src="material/tsukushi/ty2.png" id="ty2">
+    <img src="material/tsukushi/houshi4.png" id="h4">
+    <img src="gif/otama.gif" id="otama">
+    <img src="material/tsukushi/t2.png" id="t2">
+    <img src="material/tsukushi/t3.png" id="t3">
+    <img src="material/tsukushi/t4.png" id="t4">
+    <img src="material/tsukushi/t5.png" id="t5">
+
+    
+    
+<!----------ここからカエル---------------------------------------------------->
+    <img src="gif/yodare.gif" id="yodare">
+    <img src="gif/anguri.gif" id="anguri">
+     <img src="gif/walk.gif" id="walk">
+    <img src="gif/rage.gif" id="rage">
+    <a href="secret.html"><img src="gif/dig.gif" id="dig"></a>
+    <img src="gif/pon.gif" id="pon">
+    <img src="gif/banzai.gif" id="banzai">
+    <img src="gif/banzai2.gif" id="banzai2">
+    <img src="gif/kona.gif" id="kona">
+    <img src="gif/sleep.gif" id="sleep">
+    <img src="gif/kerobin.gif" id="kerobin">
+    <img src="gif/nuku2.gif" id="nuku">
+    <img src="gif/hipparo.gif" id="hipparo">
+    <img src="gif/dig2.gif" id="dig2">
+    <img src="gif/maze.gif" id="maze">
+    <img src="gif/nabe.gif" id="nabe">
+    <img src="gif/give.gif" id="give">
+    <img src="gif/run2.gif" id="run">
+    <img src="gif/poyo.gif" id="poyo">
+ 
+    
+
+    
+    
+<!----------背景---------------------------------------------------->    
+    <img src="gif/kumo_1.gif" id="kumo1">
+    <img src="gif/kumo_2.gif" id="kumo2">
+    <img src="material/background/tree/tree1.png" id="tree1">
+   <img src="material/background/back/rode.png" id="rode">
+   <img src="material/background/back/saku2.png" id="saku">
+    <img src="material/background/reaf/moko.png" id="moko">
+    <img src="material/background/reaf/moko.png" id="moko2"><img src="material/background/reaf/moko.png" id="moko3"><img src="material/background/reaf/moko.png" id="moko4">
+    <img src="material/background/reaf/kanban.png" id="kanban">
+    <img src="material/background/yama/yama1.png" id="yama1">
+   <img src="material/background/reaf/ha.png" id="ha">
+    <img src="material/background/back/rode4.png" id="rode4">
+    <img src="material/background/tree/tsubaki.png" id="tubaki">
+    <img src="material/background/tree/tsubaki2.png" id="tubaki2">
+    <img src="material/background/tree/tree2.png"  id="tree2">
+    <img src="material/background/tree/tree3.png" id="tree3">
+    <img src="material/background/reaf/ike2.png" id="ike">
+    <img src="material/background/reaf/tuchi.png" id="tuchi">
+    <img src="material/background/reaf/kanban2.png" id="kanban2">
+    <img src="gif/kawa.gif" id="kawa">
+   <img src="material/background/back/dodai.png" id="dodai">
+    <img src="material/background/tree/tsubaki5.png" id="tsubaki4">
+    <img src="gif/kumo4.gif" id="kumo4">
+    <img src="material/background/back/ten.png" id="ten">
+    <img src="material/background/back/rode5.png" id="rode5">
+    <img src="material/background/reaf/ten.png" id="ten1">
+    <img src="material/background/back/yama2.png" id="yama2">
+    <img src="gif/wood.gif" id="wood">
+    <img src="material/background/reaf/baketu.png" id="baketu">
+    <img src="material/background/reaf/baketu2.png" id="baketu2">
+    <img src="gif/sun.gif" id="sun">
+    </div>
+</body>
+</html>

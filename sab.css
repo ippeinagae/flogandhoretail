@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background-image: url(material/background/back/back_color2.png)
+}
+img#secret{
+    position: absolute;
+    height: 700px;
+    left: 200px;
+    top:100px;
+
+}
+img#hiki{
+    position: absolute;
+    z-index: 1;
+    top: 490px;
+    left: 350px;
+    height: 230px;
+}
+div#box{
+    width: 10%;
+    margin: 0 auto;
+     max-width: 500%;
+}
+img#tuta{
+    position: absolute;
+    height: 150px;
+    z-index: 1;
+    top:225px;
+    left:600px
+}
+
+
+
+
+
+
+
+
+
+img#tuta2{
+    position: absolute;
+    height: 60px;
+    z-index: 1;
+    top:553px;
+    left:356px
+}
+img#secret2{
+    position: absolute;
+    height: 800px;
+    left:300px;
+    top:100px;
+
+}
+img#cow{
+    position: absolute;
+    z-index: 1;
+    top: 530px;
+    left: 650px;
+    height: 170px;
+}
