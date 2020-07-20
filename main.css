@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url(material/background/back/back_color.png)
+   background-color: #E9E4D5;
 }
 
 #loader-bg {
@@ -14,16 +14,17 @@ body{
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #111111;
+  background: #121212;
   z-index: 4;
 }
 #loader {
+  font-family: "Hiragino Kaku Gothic ProN;s
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   width: 200px;
-  height: 400px;
+  height: 600px;
   margin-top: -100px;
   margin-left: -100px;
   text-align: center;
@@ -36,6 +37,7 @@ body{
 span#green{
     color: #008800	;
 }
+#red{color: brown;}
 
 img#back_resize{
     position: absolute;
@@ -165,8 +167,8 @@ img#nabe{
 img#sit{
     position: absolute;
     height: 50px;
-    top:495px;
-    left:1503px;
+    top:905px;
+    left:1607px;
     z-index: 2;
     }
 img#give{
@@ -178,16 +180,97 @@ img#give{
     }
 img#take{
     position: absolute;
-    height: 80px;
-    top:590px;
-    left:1653px;
+    height: 70px;
+    top:900px;
+    left:1453px;
     z-index: 2;
     }
 img#tum{
     position: absolute;
-    height: 90px;
-    top:639px;
-    left:743px;
+    height: 70px;
+    top:1000px;
+    left:2100px;
+    z-index: 2;
+    }
+img#swim{
+    position: absolute;
+    height: 75px;
+    top:990px;
+    left:1753px;
+    z-index: 2;
+    }
+img#swim2{
+    position: absolute;
+    height: 85px;
+    top:960px;
+    left:2253px;
+    z-index: 2;
+    }
+img#dance{
+    position: absolute;
+    height: 80px;
+    top:1040px;
+    left:1883px;
+    z-index: 2;
+    }
+img#gora{
+      position: absolute;
+    height: 60px;
+    top:1120px;
+    left:2183px;
+    z-index: 2;
+}
+img#eat{
+      position: absolute;
+    height: 40px;
+    top:875px;
+    left:1943px;
+    z-index: 2;
+    transform: scale(-1, 1);
+}
+img#kumo{
+      position: absolute;
+    height: 80px;
+    top:800px;
+    left:1748px;
+    z-index:0;
+    transform: scale(-1, 1);
+}
+img#battle{
+    position: absolute;
+    height: 100px;
+    top:450px;
+    left:1970px;
+    z-index: 2;
+    }
+img#drink{
+    position: absolute;
+    height: 120px;
+    top:1060px;
+    left:1970px;
+    z-index: 2;
+    }
+img#on{
+     position: absolute;
+    height: 35px;
+    top:890px;
+    left:2130px;
+    z-index: 2;
+}
+
+img#eat2{
+    position: absolute;
+    height: 80px;
+    top:1102px;
+    left:1792px;
+    z-index: 2;
+    transform: scale(-1, 1);
+    }
+img#maze2{
+    position: absolute;
+    height: 80px;
+    top:1152px;
+    left:2052px;
     z-index: 2;
     }
 
@@ -268,14 +351,14 @@ img#ty2{
 /*---------------------------------------------------背景----------------------------------------------------*/
 img#kumo1{
     position: absolute;
-    height: 180px;
+    height: 160px;
     top:200px;
     left:60px;
 }
 
 img#kumo2{
     position: absolute;
-    height: 130px;
+    height: 180px;
     top:250px;
     left:390px;
 }
@@ -304,9 +387,10 @@ img#tree3{
     left:100px;}
 img#tree6{
     position: absolute;
-    height: 180px;
-    top:639px;
-    left:300px;}
+    height: 230px;
+    top:1269px;
+    left:1700px;
+z-index: 2;}
 img#rode{
     position: absolute;
     height: 350px;
@@ -352,6 +436,7 @@ img#moko{
     z-index: 1;
     top:1050px;
     left: 270px;
+    z-index: 888;
 }
 img#moko2{
     position: absolute;
@@ -359,6 +444,7 @@ img#moko2{
     z-index: 1;
     top:1045px;
     left: 400px;
+     z-index: 888;
 }
 img#moko3{
     position: absolute;
@@ -366,6 +452,7 @@ img#moko3{
     z-index: 1;
     top:1052px;
     left: 580px;
+     z-index: 888;
 }
 img#moko4{
     position: absolute;
@@ -373,6 +460,7 @@ img#moko4{
     z-index: 1;
     top:1050px;
     left: 680px;
+     z-index: 888; 
 }
 img#rode2{
     position: absolute;
@@ -394,9 +482,9 @@ img#tesuto{  position: absolute;
     left: 1500px;}
 img#kumo4{
     position: absolute;
-    height: 110px;
-    top:220px;
-    left: 600px;
+    height: 150px;
+    top:200px;
+    left: 650px;
 }
 img#tree5{
     position: absolute;
@@ -411,15 +499,15 @@ img#ana{
     left: 580px;
 }
 img#rock{ position: absolute;
-    height: 39px;
-    top:520px;
-    left:1491px;
+    height: 32px;
+    top:930px;
+    left:1599px;
     z-index: 1;}
 
 img#rock2{ position: absolute;
-    height: 50px;
-    top:575px;
-    left:1451px;
+    height: 35px;
+    top:970px;
+    left:1591px;
     z-index: 1;}
 img#baketu{
     position: absolute;
@@ -553,15 +641,181 @@ img#yama2{ position: absolute;
     left: 736px;
     z-index: -1;
     }
+img#ana2{ position: absolute;
+    height: 80px;
+    top:779px;
+    left: 1466px;
+    z-index: 4;
+    transform:rotate(-30deg) 
+    }
 img#sun{ position: absolute;
-    height: 240px;
-    top:179px;
-    left: 1206px;
+    height: 150px;
+    top:320px;
+    left: 1326px;
     z-index: -1;
     }
 img#sen1{ position: absolute;
     height: 160px;
     top:700px;
     left: 736px;
-    z-index: -1;
+    z-index: 5;
     }
+img#oka{
+     position: absolute;
+height: 800px;
+    top:676px;
+    left: 1217.5px;
+    z-index: 1;
+}
+img#zyu{
+     position: absolute;
+height: 1270px;
+    top:207px;
+    left: 1461.5px;
+    z-index: 1;
+}
+img#kumo6{
+     position: absolute;
+    height: 150px;
+    top:492px;
+    left: 1536px;
+    z-index: -1;
+    
+}
+img#kumo7{
+     position: absolute;
+    height: 120px;
+    top:362px;
+    left: 2136px;
+    z-index: -1;
+    
+}
+img#kumo8{
+     position: absolute;
+    height: 180px;
+    top:162px;
+    left: 1736px;
+    z-index: -1;
+     transform:rotate(30deg)
+    
+    
+}
+img#pachi1{
+     position: absolute;
+    height: 50px;
+    top:1232px;
+    left: 2362px;
+    z-index: -1;
+}
+
+img#has{position: absolute;
+    height: 300px;
+    top:1022px;
+    left: 1882px;
+    z-index: 1;
+transform:rotate(1deg)}
+img#hamon{position: absolute;
+    height: 280px;
+    top:1127px;
+    left: 1912px;
+    z-index: 1;
+transform:rotate(2deg)}
+img#kinomi{position: absolute;
+    height: 30px;
+    top:1167px;
+    left: 1980px;
+    z-index: 1;
+transform:rotate(2deg)}
+img#shiru{
+    position: absolute;
+    height: 10px;
+    top:950px;
+    left:1403px;
+    z-index: 2;
+    transform:rotate(16deg)
+}
+img#shiru2{
+    position: absolute;
+    height: 5px;
+    top:900px;
+    left:1203px;
+    z-index: 2;
+    transform:rotate(16deg)
+}
+img#tsubaki6{
+     position: absolute;
+    height: 80px;
+    top:910px;
+    left:1280px;
+    z-index: 9998;
+    transform:rotate(16deg)
+}
+img#ha2{position: absolute;
+    height: 80px;
+    top:1127px;
+    left: 1740px;
+    z-index: 1;}
+img#pachi3{
+    position: absolute;
+    height: 30px;
+    top:0;
+    left: 0;
+    z-index: 3
+}
+img#hand{
+    position: absolute;
+    height: 150px;
+    z-index: 1;
+    top:950px;
+    left: 130px;
+    z-index: 2;
+}
+
+  
+
+
+/*--------------------------------------------------tsukushi----------------------------------------------------*/
+
+.toggle_tukusi{
+    display: none;
+}
+#t6{
+    height: 300px;
+    position: absolute;
+    top:820px;
+    left: 155px;
+    z-index: 888;
+}
+#t7{
+    height: 150px;
+    position: absolute;
+    top:970px;
+    left: 380px;
+    z-index: 888;
+}
+#t8{
+    height: 100px;
+    position: absolute;
+    top:980px;
+    left: 595px;
+    z-index: 888;
+}
+#t9{
+    height: 100px;
+    position: absolute;
+    top:980px;
+    left: 670px;
+    z-index: 888;
+}
+
+/* 書き足し文 */
+
+#kabuto{
+    position: absolute;
+    height: 80px;
+    top:915px;
+    left:1300px;
+    z-index: 1;
+}
+
+
